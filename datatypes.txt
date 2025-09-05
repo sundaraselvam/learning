@@ -1,0 +1,65 @@
+                                        **Data types in Javascript**
+
+Javascript has a set of rules in declaring the variables based on the value the variable is about to hold,
+Which is defined as Data Types. Based on the defined terms, JS has 2 classifications in Data Types
+they are 
+    =>Primitive Data Types
+    =>Non-Primitive Data Types
+
+Primitive Data Types:
+    These are the built-in  data types that are provided by Javascript,They represent single values and are not mutable.
+    The given below are the members of Primitive Data Types
+        =>Number
+            This is the data type in JavaScript can be used to hold decimal values as well as values without decimals.
+            eg : let num = 100; (or) let num = 100.1;
+        =>String
+            This data type in JavaScript represents a sequence of characters that are surrounded by single or double quotes.
+            eg: let str = 'Sundar'; (or) let str = "Sundar";
+        =>Undefined
+            This means that a variable has been declared but has not been assigned a value, or it has been explicitly set to the value `undefined`.
+            eg: let und;
+        =>Boolean
+            This data types only holds either "True" or "False" as values.
+            eg: let bool = true;
+        =>Null
+            This data type consists an empty space in the storage defined by "null"(Case Sensitive) keyword.
+            eg: let n = null;
+        =>BigInt
+            This data type allows a wide spectrum of numbers to be stored, I.E numbers greater than (2^53)-1.
+            The number is specified by writing 'n' at the end of the value.
+            eg : let big = 192938475648390182756375637215647890873n
+        =>Symbol
+            This data type used to create objects which will always be unique. these objects can be created using Symbol constructor.
+            eg : let sym = Symbol("Hi");
+
+Non-Primitive Data Types:
+    Non-primitive data types, also known as reference types, are objects and derived data types.
+    They can store collections of values or more complex entities. The non-primitive data types in JavaScript are:
+        =>Objects
+            These are entities having properties and methods, They are created to be a representative to call the data with reference.
+            eg :
+            let car = {
+                brand : "Nissan",
+                model : "GT",
+                price : 25000000
+            };
+            let obj = new car();
+            console.log(obj.brand);
+        =>Arrays
+            They are A specialized type of object used to store ordered collections of values.
+            Array elements are accessed by their numerical index.
+            eg:
+            let car = ['Nissan','Ford','Tata'];
+            console.log(car);
+            console.log(car[1]);
+        =>Functions:
+            They are Blocks of reusable code designed to perform specific tasks.
+            In JavaScript, functions are also considered objects and can be assigned to variables,
+            passed as arguments, and returned from other functions.
+            eg:
+            let a = 100;
+            let b = 200;
+            function add(){
+                console.log(a+b);
+            }
+
